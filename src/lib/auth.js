@@ -3,8 +3,8 @@ import jwt from "jsonwebtoken";
 const KEY = "1101102";
 
 const checkApiKey = (req) => {
-  const apiKey = req.headers["apikey"];
-  if (apiKey === "6501730") return true;
+  const apiKey = req.headers["apikey"] ;
+  if (apiKey === KEY) return true;
 
   return false;
 };

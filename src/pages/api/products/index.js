@@ -8,8 +8,7 @@ export default function handler(req, res) {
 
   if (req.method === "POST") {
     const { id, title, price, description, category, image } = req.body;
-
-    // Validate required fields
+    
     if (!id || !title || !price || !description || !category || !image) {
       res.status(400).json({ message: "All fields are required" });
       return;

@@ -3,7 +3,8 @@ import mysql from 'mysql';
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    port: 8889,
+    password: 'root',
     database: 'storeapi',
 });
 
